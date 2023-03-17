@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+      "config:base"
+  ],
+  "baseBranches": [
+      "main"
+  ],
+  "rangeStrategy": "bump",
+  "ignoreDeps": [
+      "node",
+      "npm"
+  ],
+  "packageRules": [
+      {
+          "automerge": true,
+          "matchFiles": [
+              "package.json"
+          ],
+          "matchUpdateTypes": [
+              "patch",
+              "minor",
+              "major"
+          ],
+          "groupName": "root",
+          "groupSlug": "shared-root",
+          "labels": [
+              "dependencies"
+          ],
+          "addLabels": [
+              "dependencies"
+          ]
+      }
+  ]
+}
