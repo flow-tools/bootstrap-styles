@@ -16,7 +16,7 @@
   "license": "MIT",
   "homepage": "https://github.com/flow-tools/bootstrap-styles#readme",
   "devDependencies": {
-    "bootstrap": "5.3.7"
+    "bootstrap": "5.3.8"
   },
   "files": [
     "css/*.{css,map}",
